@@ -1,0 +1,53 @@
+.md-container {
+  padding: 20px;
+  font-family: Arial;
+}
+
+.md-layout {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.master {
+  width: 35%;
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.rezervacija {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.rezervacija:hover {
+  background: #eaeaea;
+}
+
+.active {
+  background: #cce5ff;
+}
+
+.detail {
+  width: 65%;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.cancel-btn {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  background: #d9864f;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background: #d87431;
+}
