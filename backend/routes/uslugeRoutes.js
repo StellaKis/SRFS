@@ -8,7 +8,9 @@ router.get("/", async (req, res) => {
     res.json(result);
   } catch (err) {
     console.error(err.message);
-    res.status(500).send("Greška servera");
+    res.status(500).json({
+      error: err.message
+    });
   }
 });
 
@@ -21,7 +23,9 @@ router.post("/", async (req, res) => {
     res.json(result);
   } catch (err) {
     console.error(err.message);
-    res.status(500).send("Greška servera");
+    res.status(500).json({
+      error: err.message
+    });
   }
 });
 
@@ -35,7 +39,9 @@ router.put("/:id", async (req, res) => {
     res.json(result);
   } catch (err) {
     console.error(err.message);
-    res.status(500).send("Greška servera");
+    res.status(500).json({
+      error: err.message
+    });
   }
 });
 
@@ -48,7 +54,9 @@ router.delete("/:id", async (req, res) => {
     res.json({ message: "Usluga obrisana" });
   } catch (err) {
     console.error(err.message);
-    res.status(500).send("Greška servera");
+    res.status(500).json({
+      error: err.message
+    });
   }
 });
 
